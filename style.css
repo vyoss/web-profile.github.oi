@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(Asset/Web\ Homepage\ BG.png);
+  background-position: center;
+}
+
+header {
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar ul {
+  display: flex;
+  margin: 20px 6%;
+  padding-right: 60px;
+}
+
+.nav-bar ul li {
+  margin-left: 30px;
+  list-style-type: none;
+}
+.nav-bar ul li a {
+  color: white;
+  text-decoration: none;
+}
+.nav-bar ul li a:hover {
+  border-bottom: 2px solid white;
+}
+#logo-img {
+  margin: 20px 3%;
+}
+#logo-img img {
+  height: 50px;
+  width: 80px;
+}
+
+#burger {
+  margin-left: 10px;
+  color: white;
+  font-size: 20px;
+  display: none;
+}
+
+/* BLOG SECTION */
+.main-highlights {
+  background-color: black;
+  background-size: cover;
+}
+
+.theme {
+  padding-top: 20px;
+  padding-left: 65px;
+}
+
+.theme a {
+  font-size: 12px;
+  text-decoration: none;
+  color: rgba(2, 154, 202, 1);
+}
+
+.wrapper {
+  width: 90%;
+  margin-left: 65px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.wrapper .box-1 {
+  width: 90%;
+  background-color: transparent;
+  position: relative;
+}
+
+.wrapper .box-1 img {
+  border: 2px solid white;
+}
+
+.wrapper .box-1 .box-content {
+  margin-top: 10px;
+}
+
+.wrapper .box-1 .box-content a {
+  font-size: 15px;
+  color: white;
+  font-weight: 800px;
+  text-decoration: none;
+}
+
+.wrapper .box-2 {
+  width: 90%;
+  background-color: transparent;
+  position: relative;
+}
+
+.wrapper .box-2 img {
+  border: 2px solid white;
+}
+
+.wrapper .box-2 .box-content {
+  margin-top: 10px;
+}
+
+.wrapper .box-2 .box-content a {
+  font-size: 15px;
+  font-weight: 800px;
+  color: white;
+  text-decoration: none;
+}
+
+.button {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+
+.button a {
+  font-size: 14px;
+  border: 2px solid white;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.button a:hover {
+  border: 2px solid rgba(2, 154, 202, 1);
+  color: rgba(2, 154, 202, 1);
+}
+
+/* PROFILE SECTION */
+.pr-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.profile {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+}
+
+.profile p {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.support {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+}
+
+.support p {
+  margin-top: 15px;
+  text-align: center;
+}
+.support ul {
+  display: flex;
+  justify-content: center;
+}
+.support ul li {
+  margin-top: 10px;
+  margin-left: 20px;
+  list-style-type: none;
+}
+.support ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 28px;
+}
+.support ul li a:hover {
+  border-bottom: 2px solid black;
+  color: black;
+}
+
+.img-hero img {
+  width: 100%;
+}
+
+/* PROJECT */
+.desc {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.desc p {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  text-align: center;
+}
+
+.programming .git-logo {
+  font-size: 80px;
+}
+
+.programming p {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.programming a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+.blender .blender-logo {
+  font-size: 80px;
+}
+.blender p {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.blender a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+.illustration .ps-logo {
+  font-size: 80px;
+}
+.illustration p {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.illustration a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+/* FOOTER */
+
+.copyright {
+  margin-top: 50px;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+
+.copyright p {
+  font-size: 11px;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+==============================================================
+--------------------------MEDIA QUERIES----------------------- */
+
+@media screen and (max-width: 1278px) {
+  /* HIGHLIGHTS */
+  .theme {
+    padding-left: 60px;
+  }
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .wrapper .box-1 img {
+    width: 500px;
+    border: 2px solid white;
+  }
+  .wrapper .box-2 img {
+    width: 500px;
+    border: 2px solid white;
+  }
+
+  /* PROFILE */
+  .pr-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1114px) {
+  .theme {
+    padding-left: 60px;
+  }
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .wrapper .box-1 img {
+    width: 400px;
+    border: 2px solid white;
+  }
+  .wrapper .box-2 img {
+    width: 400px;
+    border: 2px solid white;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #logo-img img {
+    height: 40px;
+    width: 65px;
+  }
+
+  .theme {
+    padding-left: 45px;
+  }
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .wrapper .box-1 img {
+    width: 350px;
+    border: 2px solid white;
+  }
+  .wrapper .box-2 img {
+    width: 350px;
+    border: 2px solid white;
+  }
+
+  .theme a {
+    display: none;
+  }
+  /* PROFILE */
+  .pr-container {
+    grid-template-columns: 1fr;
+  }
+  .profile {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .support {
+    margin-top: -40px;
+  }
+
+  /* PROJECT */
+  .cards {
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .illustration {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html{
+    font-size: 62%;
+  }
+  #logo-img img {
+    height: 30px;
+    width: 50px;
+  }
+  .theme a {
+    display: none;
+  }
+  .theme a {
+    font-size: 10px;
+    text-decoration: none;
+    color: rgba(2, 154, 202, 1);
+  }
+  .wrapper {
+    padding-left: 50px;
+    margin: 10px auto;
+    grid-template-columns: 1fr;
+  }
+  .wrapper .box-1 img {
+    width: 90%;
+    border: 2px solid white;
+  }
+  .wrapper .box-2 img {
+    width: 90%;
+    border: 2px solid white;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .blender {
+    margin-top: 40px;
+  }
+}
